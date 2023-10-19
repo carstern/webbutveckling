@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curriculum Vitae</title>
-    <script src="https://kit.fontawesome.com/ad20af66a9.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/ad20af66a9.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
@@ -19,46 +22,87 @@
         </ul>
 
         <!-- Menubutton -->
-        <div class="dropdown">
-          <button class="dropbtn">|||</button>
-          <div class="dropdown-content">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-          </div>
-        </div>
+
+        <input id="menu-toggle" type="checkbox">
+        <ul id="collapse-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <label id="menu-label" for="menu-toggle">
+  <i class="fa-solid fa-bars"></i>
+</label>  
+
+
+
       </nav>
     </header>
 
     <section class="top-card-section">
       <article class="profile">
-        
         <img
           src="/CV/images/caroline.jpg"
           alt="Picture of Caroline and her son on a swing"
           class="profile-image"
           height="80%"
         />
-                <button onclick="window.location.href = 'about.html';">Click for creat content!</button></div>
+        <button onclick="window.location.href = 'about.html';">
+          Click for creat content!
+        </button>
       </article>
-      <article class="cv-link"><h4 class="cv-card">Welcome to my profile page. This page is created by what I would say are the foundation of learning new things. Curiosity, frustration and growth. I love to gain new skills, I necessarily don't always have the patience to do so, but being a person who's humble and self aware, I'd like to face my weaknesses and find ways to turn them into strengths.</h4></article>
+      <article class="cv-link">
+        <h4 class="cv-card">
+          Welcome to my profile page. This page is created by what I would say
+          are the foundation of learning new things. Curiosity, frustration and
+          growth. I love to gain new skills, I necessarily don't always have the
+          patience to do so, but being a person who's humble and self aware, I'd
+          like to face my weaknesses and find ways to turn them into strengths.
+        </h4>
+      </article>
     </section>
     <p class="subnav">My projects</p>
-    
+
     <section class="bottom-card-section">
-      <article class="bottom-card1"><a class="project-links" href="about.html"><div class="text">"You Name It": Providing a stage for everyone with the passion for music.</div></a>
-        
-          </article>
-      <article class="bottom-card2"><a class="project-links" href="about.html"><div class="text">My greatest achievment of all time</div></a></article>
-      <article class="bottom-card3"><a class="project-links" href="about.html"><div class="text">Paws without flaws, a fluffy love story</div></a></article>
-      <article class="bottom-card4"><a class="project-links" href="about.html"><div class="text">Pushing boarders: Skateboarding made available and inclusive for everyone.</div></a></article>
+      <article class="bottom-card1">
+        <a class="project-links" href="about.html"
+          ><div class="text">
+            "You Name It": Providing a stage for everyone with the passion for
+            music.
+          </div></a
+        >
+      </article>
+      <article class="bottom-card2">
+        <a class="project-links" href="about.html"
+          ><div class="text">My greatest achievment of all time</div></a
+        >
+      </article>
+      <article class="bottom-card3">
+        <a class="project-links" href="about.html"
+          ><div class="text">Paws without flaws, a fluffy love story</div></a
+        >
+      </article>
+      <article class="bottom-card4">
+        <a class="project-links" href="about.html"
+          ><div class="text">
+            Pushing boarders: Skateboarding made available and inclusive for
+            everyone.
+          </div></a
+        >
+      </article>
     </section>
     <footer>
-      <!-- <a href="mailto:caroline.edgren@chasacademy.se"><img src="myImage.jpg"/></a> -->
-      <span href="mailto:caroline.edgren@chasacademy.se"><i class="fa-regular fa-envelope"></i></span>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-github"></i>
-      <i class="fa-brands fa-linkedin-in"></i>
+      <a href="mailto:caroline.edgren@chasacademy.se"
+        ><i class="fa-regular fa-envelope"></i
+      ></a>
+      <a href="https://instagram.com/carster" target="_blank"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+      <a href="https://github.com/carstern"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a href="https://linkedin.com"
+        ><i class="fa-brands fa-linkedin-in"></i
+      ></a>
     </footer>
   </body>
 </html>

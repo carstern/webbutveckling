@@ -15,19 +15,21 @@ body {
 
 .header-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
   flex-grow: 1;
   flex-shrink: 1;
   line-height: 1rem;
-  overflow: hidden;
   background-color: rgb(76, 97, 78);
   margin: 1rem 1rem 0rem 1rem;
   height: 5vh;
   list-style: none;
+  
 }
 
 .nav-menu {
   display: none;
+  width: max-content;
 }
 
 .logo a,
@@ -49,7 +51,7 @@ p {
 .nav-item a:hover {
   color: rgb(204, 163, 102);
   background-color: rgb(63, 99, 63);
-  transform: scale(1.2);
+  transform: scale(1);
 }
 
 .nav-item a:active {
@@ -57,54 +59,36 @@ p {
   background-color: rgb(204, 163, 102);
 }
 
-.dropdown:hover {
-  color: rgb(204, 163, 102);
-  background-color: rgb(63, 99, 63);
-}
+/* menu button test */
 
-/* The dropdown container */
-.dropdown {
-  float: right;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: rgb(204, 163, 102);
-  background-color: rgb(76, 97, 78);
-  padding: 14px 16px;
-}
-
-/* Dropdown content */
-.dropdown-content {
+#menu-toggle {
   display: none;
-  position: absolute;
+}
+ul a {
+  width: 10%;
+}
+
+#collapse-menu {
+  position: relative;
+  margin-top: 15vh;
+  transition: transform 0.3s;
+  transform-origin: right;
+  list-style: none;
+  border-radius: 5%;
+  background-color: rgb(204, 163, 102);
+  z-index: 1;
+  top: 1rem;
+  left: 15%;
+  
+}
+
+input:not(:checked) ~ #collapse-menu {
+  transform: scaleX(0);
   background-color: rgb(204, 163, 102);
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: flex;
-  text-align: right;
-}
-
-/* Dropdown menu on click */
-.dropdown:hover .dropdown-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: fixed;
-  right: 15px;
-}
-
 /* Body */
+
 
 body {
   margin: 0;
@@ -239,9 +223,7 @@ i {
   padding: 2rem 1rem;
   gap: 1rem;
   display: grid;
-  
-  
-  }
+}
 
 .article-separator {
   border: 1px dotted black;
@@ -254,20 +236,22 @@ hr.separator {
 
 .experience-colums {
   display: flex;
-   flex-direction: column;
-   margin: 1rem;
-   gap: 0.5rem;
-  }
-  
-  .experiences1, .experiences2, .experiences3, .experiences4  {
+  flex-direction: column;
+  margin: 1rem;
+  gap: 0.5rem;
+}
 
-    background-color: rgb(92, 112, 90);
-  } 
+.experiences1,
+.experiences2,
+.experiences3,
+.experiences4 {
+  background-color: rgb(92, 112, 90);
+}
 
-  .experiences5, .experiences6  {
-
+.experiences5,
+.experiences6 {
   background-color: rgb(204, 163, 102);
-  }
+}
 
 /* media */
 
@@ -277,7 +261,7 @@ hr.separator {
     margin: 0 auto;
   }
 
-  .dropdown {
+  label {
     display: none;
   }
 
@@ -296,6 +280,11 @@ hr.separator {
     display: flex;
     justify-content: flex-end;
   }
+
+  #collapse-menu {
+    display: none;
+  }
+
   .top-card-section .profile,
   .cv-link {
     height: 250px;
@@ -326,47 +315,47 @@ hr.separator {
     opacity: 1;
   }
 
-/* ABOUT ME PAGE */
-.text-colums {
-  padding: 2rem 1rem;
-  gap: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.text-about-work {
-  border-left: 1px dotted black;
-  padding: 0rem 0rem 0rem 1rem;
-}
+  /* ABOUT ME PAGE */
+  .text-colums {
+    padding: 2rem 1rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .text-about-work {
+    border-left: 1px dotted black;
+    padding: 0rem 0rem 0rem 1rem;
+  }
 
-.experience-colums {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-margin: 1rem;
-gap: 1rem;
-}
+  .experience-colums {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 1rem;
+    gap: 1rem;
+  }
 
-.experiences1 {
-  grid-column: 1 / span 2;
-  background-color: rgb(92, 112, 90);;
-} 
-.experiences2 {
-  grid-column: 3 / span 2;
-  background-color: rgb(92, 112, 90);;
-}
-.experiences3 {
-  grid-column: 5 / span 2;
-  background-color: rgb(92, 112, 90);;
-}
-.experiences4 {
-  grid-column: 7 / span 2;
-  background-color: rgb(92, 112, 90);;
-}
-.experiences5 {
-grid-column: 1 / span 4;
-background-color: rgb(204, 163, 102);
-}
-.experiences6 {
-  grid-column: 5 / span 4;
-  background-color: rgb(204, 163, 102);
+  .experiences1 {
+    grid-column: 1 / span 2;
+    background-color: rgb(92, 112, 90);
+  }
+  .experiences2 {
+    grid-column: 3 / span 2;
+    background-color: rgb(92, 112, 90);
+  }
+  .experiences3 {
+    grid-column: 5 / span 2;
+    background-color: rgb(92, 112, 90);
+  }
+  .experiences4 {
+    grid-column: 7 / span 2;
+    background-color: rgb(92, 112, 90);
+  }
+  .experiences5 {
+    grid-column: 1 / span 4;
+    background-color: rgb(204, 163, 102);
+  }
+  .experiences6 {
+    grid-column: 5 / span 4;
+    background-color: rgb(204, 163, 102);
   }
 }
