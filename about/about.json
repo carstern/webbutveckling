@@ -1,9 +1,10 @@
 [
   {
-    "interests": "Some text here about what I like to do",
-    "cvIntroduction": "Let them know what you are to present here"
+    "cvIntroduction": "Me, myself and my interests",
+    "cvInformation": "Jag är en 'hyvens person' som gillar utmaningar och att skriva rader med rader av text som beskriver mig som person. Genom åren så har jag testat det mesta, så jag räds inte nya utmaningar. Se nedan för mina erfarenheter och utbildningar."
   },
-
+  {
+    "workplaces": [
   {
     "workplace": "CareTech 2010 - 2015",
     "title": "Technical manager",
@@ -11,20 +12,22 @@
   },
   {
     "workplace": "Doro 2015 - 2019",
-    "title": "Technical manager",
+    "title": "Technical engineer",
     "information": "DORO integrated the full senior care service into CareTech callcenter when the two merged into one. The callcenter was moved to another location which was the bigges achievment of my carreer as moving a 24/7 operation between sites while being operational is a project with many risks."
   },
   {
-    "job3": "Telavox 2019 -",
-    "title": "Technical manager",
+    "workplace": "Telavox 2019 -",
+    "title": "Third line technician",
     "information": "UCAS at it's best. With Telavox I've stayed in telecom but with the possibility to approach new tech and with their agile management style I have been presented to the world of programming."
   },
   {
-    "job4": "Future awesome company",
-    "title": "Technical manager",
+    "workplace": "Future awesome company",
+    "title": "Bosslady",
     "information": "I'm running my own creative creation at my farm in south of Sweden. Project management meets on site handywoman and caretaker of the many animals."
-  },
+  }
+],
 
+"educations": [
   {
     "school": "IHM Business School",
     "education": "Agil Project Management",
@@ -35,4 +38,6 @@
     "education": "Fullstack JavaScript Developer",
     "information": "You can create the world with a few lines of code. Currently learning to swim the deep waters of programming without the fear of drowning. Exciting times!"
   }
+]
+}
 ]

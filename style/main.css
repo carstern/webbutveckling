@@ -222,6 +222,14 @@ button {
 }
 
 /* ABOUT.HTML */
+
+.experiences > div {
+  border: solid;
+  margin: 1rem;
+  display: flex;
+  
+}
+
 .text-colums {
   padding: 2rem 1rem;
   gap: 1rem;
