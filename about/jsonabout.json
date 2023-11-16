@@ -1,0 +1,38 @@
+[
+  {
+    "interests": "Some text here about what I like to do",
+    "cvIntroduction": "Let them know what you are to present here"
+  },
+
+  {
+    "workplace": "CareTech 2010 - 2015",
+    "title": "Technical manager",
+    "information": "At CareTech I started my jurney in Tech. I changed career from the senior-care world and soon became the technical manager of the callcenter."
+  },
+  {
+    "workplace": "Doro 2015 - 2019",
+    "title": "Technical manager",
+    "information": "DORO integrated the full senior care service into CareTech callcenter when the two merged into one. The callcenter was moved to another location which was the bigges achievment of my carreer as moving a 24/7 operation between sites while being operational is a project with many risks."
+  },
+  {
+    "job3": "Telavox 2019 -",
+    "title": "Technical manager",
+    "information": "UCAS at it's best. With Telavox I've stayed in telecom but with the possibility to approach new tech and with their agile management style I have been presented to the world of programming."
+  },
+  {
+    "job4": "Future awesome company",
+    "title": "Technical manager",
+    "information": "I'm running my own creative creation at my farm in south of Sweden. Project management meets on site handywoman and caretaker of the many animals."
+  },
+
+  {
+    "school": "IHM Business School",
+    "education": "Agil Project Management",
+    "information": "The agile jurney and change management is one of the most eciting things to be a part of in my book. Learning how to create change with behavioral science in mind is an excelent skill that I'm proud to have achieved."
+  },
+  {
+    "school": "Chas Academy",
+    "education": "Fullstack JavaScript Developer",
+    "information": "You can create the world with a few lines of code. Currently learning to swim the deep waters of programming without the fear of drowning. Exciting times!"
+  }
+]
