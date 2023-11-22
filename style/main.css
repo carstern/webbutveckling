@@ -34,7 +34,7 @@ body {
 
 .logo a,
 .header-nav a,
-p {
+.logo p {
   font-size: 1rem;
   color: black;
   display: flex;
@@ -156,6 +156,15 @@ button {
   border-radius: 10%;
 }
 
+/* Midnav */
+
+.mid-card1 {
+  background-image: url(/CV/images/numberguess.jpg);
+  max-width: 300px;
+  object-position: center top;
+  
+}
+
 /* subnav - secondary nav to seperate*/
 
 .subnav {
@@ -169,17 +178,17 @@ button {
   margin: 0rem 1rem auto;
   height: 5vh;
   list-style: none;
-  color: black;
+  color: rgb(204, 163, 102);
   font-size: 1rem;
 }
 
-.bottom-card-section {
+.card-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.bottom-card-section > * {
+.card-section > * {
   height: 200px;
   padding: 10px 5px 10px 5px;
   min-width: 150px;
@@ -192,7 +201,7 @@ button {
 }
 
 .text {
-  background-color: antiquewhite;
+  background-color: rgb(204, 163, 102);
   opacity: 0.7;
   display: flex;
   height: fit-content;
@@ -233,7 +242,7 @@ button {
 
 li, p {
   list-style: none;
-  color: blue;
+  
   
 }
 
@@ -410,13 +419,14 @@ button {
     flex-wrap: wrap;
   }
 
-  .bottom-card-section > * {
+  .card-section > * {
     height: 60% auto;
     margin: 1rem;
     display: flex;
     flex-wrap: wrap;
     opacity: 0.5;
   }
+  .mid-card1:hover,
   .bottom-card1:hover,
   .bottom-card2:hover,
   .bottom-card3:hover,
