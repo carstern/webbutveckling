@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0.7rem;
+}
+
+section {
+  background-color: rgb(182, 142, 86);
+  border-radius: 2%;
+  padding: 1rem;
+  }
+h1 {
+  color: orange;
+}
+
+.informationDiv {
+  background-color: rgb(171, 98, 67);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game {
+  background-color: rgb(171, 98, 67);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Start game Button */
+#startGame {
+  background-color: black;
+  color: brown;
+}
+
+/* Start game Button */
+#guessBtn {
+  background-color: black;
+  color: brown;
+}
+
+#feedback {
+  margin: 1rem;
+  background-color: orange;
+  color: rgb(41, 30, 11);
+  list-style: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
