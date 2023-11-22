@@ -18,17 +18,19 @@ cvInformationElement.textContent = cvInfo[0].cvInformation;
 
     workplaces.forEach(workplace => {
         const listItem = document.createElement('li');
-        listItem.innerHTML = `<h3>${workplace.title}</h3>
+        // listItem.classList = "workplaces";
+        listItem.innerHTML = `<div class ="workplaces"><h3>${workplace.title}</h3>
                               <p><strong>${workplace.workplace}</strong></p>
-                              <p>${workplace.information}</p>`;
+                              <p>${workplace.information}</p></div>`;
         workplacesList.appendChild(listItem);
       });
 
       educations.forEach(education => {
         const listItem = document.createElement('li');
-        listItem.innerHTML = `<h3>${education.school}</h3>
+        // listItem.classList = "educations";
+        listItem.innerHTML = `<div class="educations"><h3>${education.school}</h3>
                               <p><strong>${education.education}</strong></p>
-                              <p>${education.information}</p>`;
+                              <p>${education.information}</p></div>`;
         educationsList.appendChild(listItem);
       });
     
