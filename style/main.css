@@ -213,20 +213,20 @@ button {
   justify-content: center;
 }
 .bottom-card1 {
-  background-image: url(/CV/images/concert.jpg);
+  background-image: url(../images/concert.jpg);
   max-width: 300px;
 }
 .bottom-card2 {
-  background-image: url(/CV/images/charlie.jpg);
+  background-image: url(../images/charlie.jpg);
   max-width: 150px;
 }
 .bottom-card3 {
-  background-image: url(/CV/images/max.jpg);
+  background-image: url(../images/max.jpg);
   max-width: 150px;
 }
 
 .bottom-card4 {
-  background-image: url(/CV/images/skater.jpg);
+  background-image: url(../images/skater.jpg);
   max-width: 300px;
 }
 
