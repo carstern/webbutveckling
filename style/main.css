@@ -159,7 +159,7 @@ button {
 /* Midnav */
 
 .mid-card1 {
-  background-image: url(/CV/images/numberguess.jpg);
+  background-image: url(../images/numberguess.jpg);
   max-width: 300px;
   object-position: center top;
   
