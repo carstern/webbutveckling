@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum Vitae</title>
     <script
       src="https://kit.fontawesome.com/ad20af66a9.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./style/main.css" />
-    <title>Document</title>
   </head>
   <body>
     <!-- HEADER -->
@@ -18,16 +18,21 @@
 
         <ul class="nav-menu">
           <li class="nav-item"><a href="index.html">Home</a></li>
-          <li class="nav-item"><a href="about.html">About</a></li>
-          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          <li class="nav-item">
+            <a href="./html/about.html"><u>About</u></a>
+          </li>
+          <li class="nav-item"><a href="./html/contact.html">Contact</a></li>
         </ul>
 
         <!-- Menubutton -->
+
         <input id="menu-toggle" type="checkbox" />
         <ul id="collapse-menu">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="./html/about.html"><u>About</u></a>
+          </li>
+          <li><a href="./html/contact.html">Contact</a></li>
         </ul>
         <label id="menu-label" for="menu-toggle">
           <i class="fa-solid fa-bars"></i>
@@ -35,18 +40,30 @@
       </nav>
     </header>
 
-    <!-- modal test concert card -->
-    <div class="main-modal">
-      <a href="#modal" id="btn">Look at my modal</a>
-    </div>
-    <div id="modal" class="modal">
-      <div class="content">
-        <a href="index.html" class="close">&Cross;</a>
-        <h2 class="modal-content">My really super duper cool modal</h2>
-        <img class="modal-image" src="./images/concert.jpg" alt="concert" />
-      </div>
-    </div>
+    <!-- PRIMARY INFORMATION -->
+    <section class="text-colums">
+      <article class="text-about-me">
+        <u><h2 id="cvIntroduction-location"></h2></u>
+        <h4 id="cvInformation-location"></h4>
+      </article>
 
+      <article class="text-about-work">
+        <h2><u>Experiences</u></h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+        doloremque corrupti accusantium dolore accusamus minima, unde odit
+        magnam, nobis porro, mollitia quisquam nulla eaque aliquam.
+      </article>
+    </section>
+    <hr class="separator" />
+
+    <!--Hämtar in mina erfarenheten och presenterar nedan-->
+    <p class="subnav">Workplaces</p>
+      <ul id="workplacesList"></ul>
+      <p class="subnav">Education</p>
+      <ul id="educationsList"></ul>
+    
+
+    <script src="../script/scriptabout.js"></script>
     <!-- FOOTER -->
     <footer>
       <a href="mailto:caroline.edgren@chasacademy.se"
@@ -62,6 +79,6 @@
         ><i class="fa-brands fa-linkedin-in"></i
       ></a>
     </footer>
-    <!-- End main footer -->
   </body>
 </html>
+
