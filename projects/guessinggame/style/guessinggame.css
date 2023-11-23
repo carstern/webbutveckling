@@ -1,26 +1,133 @@
 * {
   box-sizing: border-box;
   margin: 0.7rem;
+  }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: darkseagreen;
 }
 
+/* Default style - header and footer */
+
+/* HEADER */
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  line-height: 1rem;
+  background-color: rgb(76, 97, 78);
+  margin: 1rem 1rem 0rem 1rem;
+  height: 5vh;
+  list-style: none;
+}
+
+/* MENU - Hidden in modile view */
+.nav-menu {
+  display: none;
+  width: max-content;
+}
+
+.logo a,
+.header-nav a,
+.logo p {
+  font-size: 1rem;
+  color: black;
+  display: flex;
+  text-decoration: none;
+  /* text-wrap: nowrap; */
+  /* letter-spacing: 0.2rem; */
+  padding: 0.8rem;
+}
+
+.nav-item {
+  color: black;
+}
+
+.nav-item a:hover {
+  color: rgb(204, 163, 102);
+  background-color: rgb(63, 99, 63);
+  transform: scale(1);
+}
+
+.nav-item a:active {
+  transform: scale(0.9s);
+  background-color: rgb(204, 163, 102);
+}
+
+.logo:hover {
+  transform: rotate(0.5turn);
+}
+
+/* MENU BUTTON */
+
+#menu-toggle {
+  display: none;
+}
+ul a {
+  width: 10%;
+}
+
+#collapse-menu {
+  position: relative;
+  margin-top: 15vh;
+  transition: transform 0.3s;
+  transform-origin: right;
+  list-style: none;
+  border-radius: 5%;
+  background-color: rgb(204, 163, 102);
+  z-index: 1;
+  top: 1rem;
+  left: 15%;
+}
+
+input:not(:checked) ~ #collapse-menu {
+  transform: scaleX(0);
+  background-color: rgb(204, 163, 102);
+}
+
+/* FOOTER */
+footer {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  line-height: 1rem;
+  overflow: hidden;
+  background-color: rgb(76, 97, 78);
+  margin: 1rem 1rem 1rem 1rem;
+  height: 5vh;
+  list-style: none;
+}
+i {
+  color: rgb(204, 163, 102);
+  margin: 0.5rem;
+}
+/* End default style */
+
+/* Game style */
 section {
-  background-color: rgb(182, 142, 86);
+  background-color: rgb(76, 97, 78);
   border-radius: 2%;
   padding: 1rem;
   }
-h1 {
-  color: orange;
-}
+
 
 .informationDiv {
-  background-color: rgb(171, 98, 67);
+  background-color: darkseagreen;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .game {
-  background-color: rgb(171, 98, 67);
+  background-color: darkseagreen;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,19 +135,19 @@ h1 {
 
 /* Start game Button */
 #startGame {
-  background-color: black;
-  color: brown;
+  background-color: rgb(76, 97, 78);
+  color: rgb(204, 163, 102);
 }
 
 /* Start game Button */
 #guessBtn {
-  background-color: black;
-  color: brown;
+  background-color: rgb(76, 97, 78);
+  color: rgb(204, 163, 102);
 }
 
 #feedback {
   margin: 1rem;
-  background-color: orange;
+  background-color: rgb(204, 163, 102);
   color: rgb(41, 30, 11);
   list-style: none;
 }
@@ -49,3 +156,37 @@ form {
   flex-direction: column;
   align-items: center;
 }
+
+
+
+/* Default media */
+
+@media (min-width: 600px) {
+  main {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  label {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+    line-height: 1rem;
+    overflow: hidden;
+    margin: 1rem 1rem auto;
+    margin-right: 1rem;
+    height: 5vh;
+    list-style: none;
+  }
+
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #collapse-menu {
+    display: none;
+  }
