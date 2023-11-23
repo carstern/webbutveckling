@@ -3,7 +3,7 @@ const cvIntroductionLocation = document.getElementById(
 );
 
 async function addCVJson() {
-  const response = await fetch("../CV/about/about.json");
+  const response = await fetch("../about/about.json");
 
   if (response.ok) {
     const cvInfo = await response.json();
