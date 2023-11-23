@@ -1,14 +1,9 @@
+/* DEFAULT STYLE - includes the nav, menus and footer. */
 * {
+  margin: 0px;
+  font-family: sans-serif;
   box-sizing: border-box;
-  margin: 0.7rem;
-  }
-body {
-  margin: 0;
-  padding: 0;
-  background-color: darkseagreen;
 }
-
-/* Default style - header and footer */
 
 /* HEADER */
 
@@ -109,17 +104,34 @@ i {
   color: rgb(204, 163, 102);
   margin: 0.5rem;
 }
+
+/* BODY */
+/* INDEX.HTML */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: darkseagreen;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+    }
 /* End default style */
 
 /* Game style */
 section {
   background-color: rgb(76, 97, 78);
   border-radius: 2%;
-  padding: 1rem;
+  padding: 0.5rem;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
   }
 
 
 .informationDiv {
+  margin: 0.5rem;
+  padding: 1rem;
   background-color: darkseagreen;
   display: flex;
   flex-direction: column;
@@ -127,6 +139,8 @@ section {
 }
 
 .game {
+  margin: 0.5rem;
+  padding: 1rem;
   background-color: darkseagreen;
   display: flex;
   flex-direction: column;

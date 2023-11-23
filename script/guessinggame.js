@@ -81,23 +81,24 @@ guessBtn.addEventListener("click", function () {
 
 //Extra - for funzies
 //Fusk-knapp som visas när man anger specifik siffra
-if(numberOfGuesses == 2){
-  const hint = document.createElement('p');
-  hint.textContent = "Psst, type 37!";
-  feedback.appendChild(hint);
-}
-  if (userGuess == 37) {
-    const tryAgainElement = document.createElement('button');
-    tryAgainElement.textContent = `Hellraiser!`;
-    feedback.appendChild(tryAgainElement);
+// Stänger av den for now genom att kommentera ut den. 
+// if(numberOfGuesses == 2){
+//   const hint = document.createElement('p');
+//   hint.textContent = "Psst, type 37!";
+//   feedback.appendChild(hint);
+// }
+//   if (userGuess == 37) {
+//     const tryAgainElement = document.createElement('button');
+//     tryAgainElement.textContent = `Hellraiser!`;
+//     feedback.appendChild(tryAgainElement);
 
-    tryAgainElement.addEventListener('click', function(){
-        console.log(correctAnswer);
-        const cheatElement = document.createElement('li');
-        cheatElement.textContent = correctAnswer;
-        feedback.appendChild(cheatElement);
-    })
+//     tryAgainElement.addEventListener('click', function(){
+//         console.log(correctAnswer);
+//         const cheatElement = document.createElement('li');
+//         cheatElement.textContent = correctAnswer;
+//         feedback.appendChild(cheatElement);
+//     })
     
-}
+// }
 
 });
