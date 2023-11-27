@@ -43,12 +43,12 @@
     <!-- PRIMARY INFORMATION -->
     <section class="text-colums">
       <article class="text-about-me">
-        <u><h2 id="cvIntroduction-location"></h2></u>
+        <h2 id="cvIntroduction-location"></h2>
         <h4 id="cvInformation-location"></h4>
       </article>
 
       <article class="text-about-work">
-        <h2><u>Experiences</u></h2>
+        <h2>Experiences</h2>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
         doloremque corrupti accusantium dolore accusamus minima, unde odit
         magnam, nobis porro, mollitia quisquam nulla eaque aliquam.
@@ -57,10 +57,10 @@
     <hr class="separator" />
 
     <!--Hämtar in mina erfarenheten och presenterar nedan-->
-    <p class="subnav">Workplaces</p>
-      <ul id="workplacesList"></ul>
-      <p class="subnav">Education</p>
-      <ul id="educationsList"></ul>
+   <div class="subnav"><button id="toggle-workspace" class="subnav">Show/hide workplaces</button></div>
+      <div id="workspacesDiv"><ul id="workplacesList"></ul></div><br>
+      <div class="subnav"><button id="toggle-education" class="subnav">Show/hide education</button></div>
+      <div id="educationsDiv"><ul id="educationsList"></ul></div>
     
 
     <script src="../script/scriptabout.js"></script>

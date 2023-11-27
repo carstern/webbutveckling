@@ -108,8 +108,6 @@ i {
 /* BODY */
 /* INDEX.HTML */
 body {
-  margin: 0;
-  padding: 0;
   background-color: darkseagreen;
   display: flex;
   flex-direction: column;

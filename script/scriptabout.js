@@ -1,3 +1,29 @@
+//Toggle arbetsplatser
+//Skapad med inspiration och hjälp av W3Schools
+//https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+
+const toggleWorkspaces = document.getElementById("toggle-workspace");
+toggleWorkspaces.addEventListener("click", function(){
+ if (workspacesDiv.style.display === 'none') {
+  workspacesDiv.style.display = "block";
+ } else { 
+    workspacesDiv.style.display ="none";
+  }
+ }
+);
+
+//Toggle utbildning
+const toggleEducation = document.getElementById("toggle-education");
+toggleEducation.addEventListener("click", function(){
+ if (educationsDiv.style.display === 'none') {
+  educationsDiv.style.display = "block";
+ } else { 
+  educationsDiv.style.display ="none";
+  }
+ }
+);
+
+//Fetch CV info från json
 const cvIntroductionLocation = document.getElementById(
   "cvIntroduction-location"
 );
