@@ -243,7 +243,11 @@ i {
   display: flex;
   flex-direction: column; 
   justify-content: center;
+   }
+   .hidden {
+    display: none;
   }
+  
 
 li, p {
   list-style: none;

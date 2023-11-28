@@ -1,27 +1,30 @@
 //Toggle arbetsplatser
 //Skapad med inspiration och hjälp av W3Schools
 //https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
-
+// Dold per default var inte en del av guiden, löste detta med hjälp 
+// av google och skapade en klass som jag la på/tog bort i funktionen.
 const toggleWorkspaces = document.getElementById("toggle-workspace");
 toggleWorkspaces.addEventListener("click", function(){
- if (workspacesDiv.style.display === 'none') {
-  workspacesDiv.style.display = "block";
- } else { 
-    workspacesDiv.style.display ="none";
+  if (workspacesDiv.classList.contains("hidden")) {
+    workspacesDiv.classList.remove("hidden");
+    workspacesDiv.style.display = "block"; // Ensure inline display is updated
+  } else { 
+    workspacesDiv.classList.add("hidden");
+    workspacesDiv.style.display = "none"; // Ensure inline display is updated
   }
- }
-);
+});
 
-//Toggle utbildning
+//Toggle visa/dölj utbildning
 const toggleEducation = document.getElementById("toggle-education");
 toggleEducation.addEventListener("click", function(){
- if (educationsDiv.style.display === 'none') {
-  educationsDiv.style.display = "block";
- } else { 
-  educationsDiv.style.display ="none";
+  if (educationsDiv.classList.contains("hidden")) {
+    educationsDiv.classList.remove("hidden");
+    educationsDiv.style.display = "block";
+  } else { 
+    educationsDiv.classList.add("hidden");
+    educationsDiv.style.display = "none";
   }
- }
-);
+});
 
 //Fetch CV info från json
 const cvIntroductionLocation = document.getElementById(
