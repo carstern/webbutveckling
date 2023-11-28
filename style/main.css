@@ -152,7 +152,7 @@ i {
   background-image: url(../images/numberguess.jpg);
   max-width: 300px;
   object-position: center top;
-  
+  justify-content: center;  
 }
 
 /* subnav - secondary nav to seperate*/
@@ -201,6 +201,7 @@ i {
   color: black;
   align-self: flex-end;
   justify-content: center;
+  align-items: center;
 }
 .bottom-card1 {
   background-image: url(../images/concert.jpg);
