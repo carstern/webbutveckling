@@ -235,7 +235,7 @@ i {
 	cursor: pointer;
 	outline: inherit;
 }
-
+ /* Styles each workplace/education */
 .workplaces, .educations {
   border: solid;
   width: 80%;
@@ -245,8 +245,9 @@ i {
   flex-direction: column; 
   justify-content: center;
    }
-   .hidden {
-    display: none;
+
+ .hidden {
+   display: none;
   }
   
 
@@ -362,6 +363,10 @@ iframe {
   }
 
   /* ABOUT ME PAGE */
+  .hidden {
+    display: none;
+  }
+
   .text-colums {
     display: grid;
     grid-template-columns: 1fr 1fr;
