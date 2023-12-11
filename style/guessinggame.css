@@ -3,54 +3,59 @@
   margin: 0px;
   font-family: sans-serif;
   box-sizing: border-box;
-}
-
+  }
+/* BODY */
+body {
+    background-color: darkseagreen;
+    min-width: 300px;
+    position: relative;
+    margin-bottom: 10rem;
+    margin-top: 8vh;
+  }
 /* HEADER */
 
 .header-nav {
+  position: fixed;
+  width: 100vw;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
   flex-shrink: 1;
-  line-height: 1rem;
   background-color: rgb(76, 97, 78);
-  margin: 1rem 1rem 0rem 1rem;
-  height: 5vh;
+  border-bottom: solid rgb(204, 163, 102);
+  height: 7vh;
   list-style: none;
 }
 
 /* MENU - Hidden in modile view */
 .nav-menu {
   display: none;
-  width: max-content;
+  margin-right: 1rem;
 }
 
 .logo a,
-.header-nav a,
 .logo p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: black;
   display: flex;
   text-decoration: none;
-  /* text-wrap: nowrap; */
-  /* letter-spacing: 0.2rem; */
+  padding: 1rem;
+}
+
+.nav-item > a {
+  font-size: 1.2rem;
+  color: black;
+  display: flex;
+  text-decoration: none;
   padding: 0.8rem;
 }
 
-.nav-item {
-  color: black;
-}
-
 .nav-item a:hover {
-  color: rgb(204, 163, 102);
+  color: black;
   background-color: rgb(63, 99, 63);
   transform: scale(1);
-}
-
-.nav-item a:active {
-  transform: scale(0.9s);
-  background-color: rgb(204, 163, 102);
 }
 
 .logo:hover {
@@ -62,32 +67,39 @@
 #menu-toggle {
   display: none;
 }
+/*Hover styling*/
 ul a {
   width: 10%;
+
 }
 
 #collapse-menu {
-  position: relative;
-  margin-top: 15vh;
-  transition: transform 0.3s;
-  transform-origin: right;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  margin-top: 19vh;
+  left: 1rem;
+  transition: transform 0.5s;
+  transform-origin: left;
   list-style: none;
   border-radius: 5%;
   background-color: rgb(204, 163, 102);
   z-index: 1;
-  top: 1rem;
-  left: 15%;
+  
+  
+  
 }
 
 input:not(:checked) ~ #collapse-menu {
   transform: scaleX(0);
-  background-color: rgb(204, 163, 102);
+  
 }
 
 /* FOOTER */
 footer {
-  position: relative;
-  bottom: 0;
+  position: fixed;
+  width: 100vw;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,23 +108,16 @@ footer {
   line-height: 1rem;
   overflow: hidden;
   background-color: rgb(76, 97, 78);
-  margin: 1rem 1rem 1rem 1rem;
-  height: 5vh;
+  border-top: solid rgb(204, 163, 102);
+  height: 7vh;
   list-style: none;
-}
-i {
-  color: rgb(204, 163, 102);
-  margin: 0.5rem;
+  bottom: 0;
 }
 
-/* BODY */
-/* INDEX.HTML */
-body {
-  background-color: darkseagreen;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-    }
+i {
+  color: rgb(204, 163, 102);
+  margin: 0.8rem;
+}
 /* End default style */
 
 /* Game style */
@@ -121,10 +126,9 @@ section {
   border-radius: 2%;
   padding: 0.5rem;
   width: max-content;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  }
+margin: 0 auto;
+margin-top: 10vh;
+}
 
 
 .informationDiv {
@@ -175,6 +179,9 @@ form {
 
 /* Default media */
 
+
+/* media */
+
 @media (min-width: 600px) {
   main {
     max-width: 60%;
@@ -186,12 +193,11 @@ form {
   }
 
   .header-nav {
+    
     display: flex;
     line-height: 1rem;
     overflow: hidden;
-    margin: 1rem 1rem auto;
-    margin-right: 1rem;
-    height: 5vh;
+    height: 7vh;
     list-style: none;
   }
 

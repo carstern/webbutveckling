@@ -7,17 +7,23 @@
 body {
     background-color: darkseagreen;
     min-width: 300px;
+    position: relative;
+    margin-bottom: 10rem;
+    margin-top: 8vh;
   }
 /* HEADER */
 
 .header-nav {
-  position: relative;
+  position: fixed;
+  width: 100vw;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
   flex-shrink: 1;
   background-color: rgb(76, 97, 78);
+  border-bottom: solid rgb(204, 163, 102);
   height: 5vh;
   list-style: none;
 }
@@ -60,10 +66,10 @@ body {
 #menu-toggle {
   display: none;
 }
+/*Hover styling*/
 ul a {
   width: 10%;
-  display: flex;
-  justify-content: center;
+
 }
 
 #collapse-menu {
@@ -90,7 +96,7 @@ input:not(:checked) ~ #collapse-menu {
 
 /* FOOTER */
 footer {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   margin-top: 1rem;
   display: flex;
@@ -101,8 +107,10 @@ footer {
   line-height: 1rem;
   overflow: hidden;
   background-color: rgb(76, 97, 78);
+  border-top: solid rgb(204, 163, 102);
   height: 7vh;
   list-style: none;
+  bottom: 0;
 }
 
 i {
