@@ -29,8 +29,15 @@ body {
 }
 
 .logo a,
-.header-nav a,
 .logo p {
+  font-size: 1.2rem;
+  color: black;
+  display: flex;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.nav-item > a {
   font-size: 1.2rem;
   color: black;
   display: flex;
@@ -38,19 +45,10 @@ body {
   padding: 0.8rem;
 }
 
-.nav-item {
-  color: black;
-}
-
 .nav-item a:hover {
-  color: rgb(204, 163, 102);
+  color: black;
   background-color: rgb(63, 99, 63);
   transform: scale(1);
-}
-
-.nav-item a:active {
-  transform: scale(0.9s);
-  background-color: rgb(204, 163, 102);
 }
 
 .logo:hover {
@@ -64,24 +62,30 @@ body {
 }
 ul a {
   width: 10%;
+  display: flex;
+  justify-content: center;
 }
 
 #collapse-menu {
-  position: relative;
-  margin-top: 15vh;
-  transition: transform 0.3s;
-  transform-origin: right;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  margin-top: 19vh;
+  left: 1rem;
+  transition: transform 0.5s;
+  transform-origin: left;
   list-style: none;
   border-radius: 5%;
   background-color: rgb(204, 163, 102);
   z-index: 1;
-  top: 1rem;
-  left: 15%;
+  
+  
+  
 }
 
 input:not(:checked) ~ #collapse-menu {
   transform: scaleX(0);
-  background-color: rgb(204, 163, 102);
+  
 }
 
 /* FOOTER */
