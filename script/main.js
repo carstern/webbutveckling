@@ -7,8 +7,17 @@
 // Gör det möjligt att stänga modalen och återgå till förstasidan
 
 const popup = document.getElementById('popup');
-function openPopup(){
+
+function openPopup() {
     popup.classList.add("open-popup");
+    // Check if the text element already exists
+    const existingTextElement = document.querySelector('.open-popup p');
+    
+    if (!existingTextElement) {
+        const textElement = document.createElement('p');
+        textElement.innerHTML = "New textinfo";
+        popup.appendChild(textElement);
+    }
 }
 function closePopup(){
     popup.classList.remove("open-popup");

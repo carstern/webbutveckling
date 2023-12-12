@@ -421,7 +421,7 @@ iframe {
     margin: 1rem;
     display: flex;
     flex-wrap: wrap;
-    opacity: 0.5;
+    opacity: 0.8;
   }
   .mid-card1:hover,
   .bottom-card1:hover,

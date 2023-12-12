@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Caroline Edgren">
-    <meta name="description" content="Caroline's page for curriculum vitae, information on projects, experiences and education. ">
+    <meta name="author" content="Caroline Edgren" />
+    <meta
+      name="description"
+      content="Caroline's page for curriculum vitae, information on projects, experiences and education. " />
     <title>Caroline | All that and a bag a chips</title>
     <script
       src="https://kit.fontawesome.com/ad20af66a9.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style/main.css" />
     <link rel="stylesheet" href="./style/transition.css" />
   </head>
@@ -18,14 +19,14 @@
     <!-- HEADER -->
     <header>
       <nav class="header-nav">
-               <ul class="nav-menu">
+        <ul class="nav-menu">
           <li class="nav-item">
             <a href="index.html"><u>Home</u></a>
           </li>
           <li class="nav-item"><a href="./html/about.html">About</a></li>
           <li class="nav-item"><a href="./html/contact.html">Contact</a></li>
         </ul>
-        
+
         <!-- Menubutton -->
 
         <input id="menu-toggle" type="checkbox" />
@@ -46,14 +47,12 @@
     <!-- PRIMARY CARDS -->
     <div class="top-card-section">
       <div class="profile">
-              <img
+        <img
           src="./images/caroline.jpg"
           alt="Picture of Caroline and her son on a swing"
-          class="profile-image"
-          
-        /></div>    
+          class="profile-image" />
+      </div>
 
-     
       <div class="cv-link">
         <h4 class="cv-card">
           Welcome to my profile page. This page is created by what I would say
@@ -65,30 +64,27 @@
       </div>
     </div>
     <p class="subnav">Projects</p>
-    
+
     <div class="card-section">
       <div class="mid-card1">
         <a class="project-links" href="./html/guessinggame.html"
           ><div class="text">
-            My very first project. <br>Guess the number in five tries. Enjoy!
-          </div></a></div>
-        </div>    
+            My very first project. <br />Guess the number in five tries. Enjoy!
+          </div></a
+        >
+      </div>
+    </div>
     <!-- SECONDARY CARDS -->
     <p class="subnav">Achievements and passions</p>
 
     <div class="card-section">
       <div class="bottom-card1">
         <button type="submit" class="project-links" onclick="openPopup()">
-            "You Name It": Providing a stage for everyone with the passion for
-            music. Click here to check it out!
-          </button>
-          <div class="popup" id="popup">
-            <img src="./images/concert.jpg" alt="Concert and audience"> 
-            <h2>THANK YOU</h2>
-            <p>Some other text</p>
-            <button type="button" onclick="closePopup()">OK</button>
-           </div>
+          "You Name It": Providing a stage for everyone with the passion for
+          music. Click here to check it out!
+        </button>
       </div>
+
       <div class="bottom-card2">
         <a class="project-links" href="./html/about.html"
           ><div class="text">My greatest achievment of all time</div></a
@@ -108,7 +104,14 @@
         >
       </div>
     </div>
-    
+
+    <!-- POPUP MODAL-->
+    <div class="popup" id="popup">
+      <img src="./images/concert.jpg" alt="Concert and audience" />
+      <h2>THANK YOU</h2>
+      
+      <button type="button" onclick="closePopup()">OK</button>
+    </div>
 
     <!-- FOOTER -->
     <footer>
