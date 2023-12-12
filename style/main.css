@@ -40,7 +40,7 @@ body {
   color: black;
   display: flex;
   text-decoration: none;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .nav-item > a {
