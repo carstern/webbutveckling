@@ -12,12 +12,8 @@ async function addCVJson() {
     const workplacesList = document.getElementById("workplacesList");
     const educations = cvInfo[1].educations;
     const educationsList = document.getElementById("educationsList");
-    const cvIntroductionElement = document.getElementById(
-      "cvIntroduction-location"
-    );
-    const cvInformationElement = document.getElementById(
-      "cvInformation-location"
-    );
+    const cvIntroductionElement = document.getElementById("cvIntroduction-location");
+    const cvInformationElement = document.getElementById("cvInformation-location");
     cvIntroductionElement.textContent = cvInfo[0].cvIntroduction;
     cvInformationElement.textContent = cvInfo[0].cvInformation;
 
