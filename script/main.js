@@ -6,9 +6,14 @@
 // Skapa modal som popar upp
 // Gör det möjligt att stänga modalen och återgå till förstasidan
 
+const popup = document.getElementById('popup');
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
 
 
-// --------- PROJECT CARD SCROLL ---------
-// Carousel-funktion på projektraden på förstasidan
-// Lägg in pilar/knappar för höger vänsterskroll
-// 
+
+

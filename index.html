@@ -78,11 +78,16 @@
 
     <div class="card-section">
       <div class="bottom-card1">
-        <a class="project-links" href="./html/about.html"
-          ><div class="text">
+        <button type="submit" class="project-links" onclick="openPopup()">
             "You Name It": Providing a stage for everyone with the passion for
             music. Click here to check it out!
-          </div></a>
+          </button>
+          <div class="popup" id="popup">
+            <img src="./images/concert.jpg" alt="Concert and audience"> 
+            <h2>THANK YOU</h2>
+            <p>Some other text</p>
+            <button type="button" onclick="closePopup()">OK</button>
+           </div>
       </div>
       <div class="bottom-card2">
         <a class="project-links" href="./html/about.html"
@@ -103,6 +108,7 @@
         >
       </div>
     </div>
+    
 
     <!-- FOOTER -->
     <footer>
@@ -119,6 +125,7 @@
         ><i class="fa-brands fa-linkedin-in"></i
       ></a>
     </footer>
+    <script src="./script/main.js"></script>
     <script src="./script/transition.js"></script>
   </body>
 </html>
