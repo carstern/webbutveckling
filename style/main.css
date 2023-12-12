@@ -83,15 +83,11 @@ ul a {
   list-style: none;
   border-radius: 5%;
   background-color: rgb(204, 163, 102);
-  z-index: 1;
-  
-  
-  
+  z-index: 1; 
 }
 
 input:not(:checked) ~ #collapse-menu {
-  transform: scaleX(0);
-  
+  transform: scaleX(0); 
 }
 
 /* FOOTER */
@@ -118,6 +114,7 @@ i {
   margin: 0.8rem;
 }
 
+/* ----------- END DEFAULT ----------------*/
 
 /* INDEX.HTML */
 .top-card-section {
@@ -246,7 +243,7 @@ i {
 /* POPUP */
 .popup {
   width: 400px;
-  background-color: white;
+  background-color: rgb(204, 163, 102);
   border-radius: 6%;
   position: absolute;
   top: 0%;
@@ -283,7 +280,7 @@ i {
     margin-top: 50px;
     padding: 10px 0;
     background: #263d1e;
-    color: #fff;
+    color: rgb(204, 163, 102);
     border: 0;
     outline: none;
     font-size: 18px;
