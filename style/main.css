@@ -159,7 +159,8 @@ i {
   background-image: url(../images/numberguess.jpg);
   max-width: 300px;
   object-position: center top;
-  justify-content: center;  
+  justify-content: center;
+  border-radius: 9%;  
 }
 
 /* subnav - secondary nav to seperate*/
@@ -195,21 +196,13 @@ i {
   flex-shrink: 1;
   margin: 1rem;
   background-color: rgb(97, 150, 97);
-}
+  }
 
 .text {
   background-color: rgb(204, 163, 102);
   opacity: 0.7;
   display: flex;
   height: fit-content;
-}
-
-.textBtn {
-  background-color: rgb(204, 163, 102);
-  opacity: 0.7;
-  display: flex;
-  height: fit-content;
-  cursor: pointer;
   
 }
 
@@ -220,23 +213,28 @@ i {
   align-self: flex-end;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .bottom-card1 {
   background-image: url(../images/concert.jpg);
   max-width: 300px;
+  border-radius: 9%;
 }
 .bottom-card2 {
   background-image: url(../images/charlie.jpg);
   max-width: 150px;
+  border-radius: 9%;
 }
 .bottom-card3 {
   background-image: url(../images/max.jpg);
   max-width: 150px;
+  border-radius: 9%;
 }
 
 .bottom-card4 {
   background-image: url(../images/skater.jpg);
   max-width: 300px;
+  border-radius: 9%;
 }
 
 
@@ -287,6 +285,7 @@ i {
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+
   }
 /* ABOUT.HTML */
 /*divar */
