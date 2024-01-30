@@ -61,3 +61,15 @@ async function projectJson() {
 }
 
 projectJson();
+
+//Google
+// Lägg till detta script på varje sida, använda och testa på cv sidan?
+const links = document.querySelectorAll('a');
+links.forEach(function(link){
+  link.addEventListener('click', function(){
+    gtag('event', 'page_transition', {
+      'event_category': 'Navigation',
+      'event_label': link.getAttribute('href')
+    });
+  });
+});
